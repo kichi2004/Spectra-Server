@@ -1,7 +1,7 @@
 ---
 services:
   valo-spectra-server:
-    image: valospectra/server
+    image: kichi128/spectra-server
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,3 +13,4 @@ services:
       - ./keys:/app/keys
     environment:
       - INSECURE=true
+    platform: linux/amd64
